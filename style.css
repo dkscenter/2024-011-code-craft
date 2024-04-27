@@ -18,3 +18,11 @@ p{
     border-radius: 10px;
     width: 200px;
 }
+
+h1{
+    text-transform: uppercase;
+}
+
+.hello-text{
+    text-shadow: #908e8e 2px 2px;
+}

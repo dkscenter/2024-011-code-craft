@@ -4,3 +4,8 @@ body{
     background-attachment: fixed;
     background-position: bottom;
 }
+
+p{
+    border: 5px dotted  #45aae9;
+    border-radius: 10px;
+}

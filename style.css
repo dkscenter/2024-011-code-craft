@@ -33,3 +33,16 @@ h1 {
 .hello-text {
     text-shadow: #908e8e 2px 2px;
 }
+
+a:link, a:visited {
+    background-color: #f76b61;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }

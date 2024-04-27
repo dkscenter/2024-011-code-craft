@@ -34,15 +34,29 @@ h1 {
     text-shadow: #908e8e 2px 2px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     background-color: #f76b61;
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
+}
+
+a:hover,
+a:active {
     background-color: red;
-  }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}

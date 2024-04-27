@@ -11,6 +11,9 @@
     function hello(alertText){
       alert("Hello! "+alertText)
     }
+    function showMyName(){
+      document.getElementById("myName").innerHTML = "My Name is: <b>Komphet Meesab</b>";
+    }
   </script>
 </head>
 
@@ -23,8 +26,8 @@
         Hello World
         <i class="material-icons">favorite</i>
       </h1>
-      <p>My Name is: <b>Komphet Meesab</b>
-        <button onclick="hello('My name is Komphet!')">
+      <p id="myName">
+        <button onclick="showMyName()">
           Click me!
         </button>
       </p>

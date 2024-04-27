@@ -10,3 +10,11 @@ p{
     border-radius: 10px;
     padding: 20px;
 }
+
+.catbox{
+    background-color: #45aae9;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 200px;
+}

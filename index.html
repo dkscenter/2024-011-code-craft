@@ -9,17 +9,34 @@
   <link rel="stylesheet" href="style.css">
   <script>
     let isShowMyName = false;
-    function hello(alertText){
-      alert("Hello! "+alertText)
+    function hello(alertText) {
+      alert("Hello! " + alertText)
     }
-    function toggleMyName(){
-      if(!isShowMyName){
-        document.getElementById("myName").innerHTML = "My Name is: <b>Komphet Meesab</b>";
-      } else {
-        document.getElementById("myName").innerHTML = "";
-      }
+    function toggleMyName() {
+      document.getElementById("myName").innerHTML = isShowMyName ? "" : "My Name is: <b>Komphet Meesab</b>";
       isShowMyName = !isShowMyName
     }
+
+    const mySkills = ["HTML", "CSS", "Javascript", "Management", "Understanding"]
+    function generateMySkillInHTML() {
+      let htmlString = '<ol>'
+      for (const skill of mySkills) {
+        htmlString += `<li>${skill}</li>`
+      }
+
+      htmlString += "</ol>"
+
+      return htmlString;
+    }
+
+    let isShowMySkill = false;
+
+    function toggleMySkills() {
+      document.getElementById("mySkills").innerHTML = isShowMySkill ? "" : generateMySkillInHTML();
+      isShowMySkill = !isShowMySkill
+    }
+
+
   </script>
 </head>
 
@@ -49,32 +66,20 @@
           I'm Komphet Meesab, your guide through the realm where innovation meets technology.<br />
           Fasten your seatbelt as we embark on a journey to discover how cutting-edge solutions can transform
           businesses.
-          <br />
           Sit tight while we load the possibilities!
+          <br>
+          <a href="contact.html">
+            Contact me!
+          </a>
         </p>
       </div>
       <div class="col-md">
         <div class="catbox">
-          <h2>My skills</h2>
-          <button onclick="hello('My position is Software Developer!')">
+          <button style="float: right;" onclick="toggleMySkills()">
             Click me!
           </button>
-          <ol>
-            <li>Hard Skills</li>
-            <ol type="a">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ol>
-            <li>Soft Skills</li>
-            <ul type="square">
-              <li>Management</li>
-              <li>Understanding</li>
-            </ul>
-          </ol>
-          <a href="contact.html">
-            Contact me!
-          </a>
+          <h2>My skills</h2>
+          <div id="mySkills"></div>
         </div>
       </div>
     </div>
